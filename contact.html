@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – EduLearn</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">🎓 EduLearn</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header text-white text-center py-5">
+    <div class="container">
+      <h1 class="fw-bold">Contact Us</h1>
+      <p class="lead">We'd love to hear from you. Send us a message!</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5 justify-content-center">
+
+        <!-- CONTACT FORM -->
+        <div class="col-lg-7">
+          <div class="card border-0 shadow-sm p-4">
+            <h3 class="fw-bold mb-4">Send a Message</h3>
+            <div id="formSuccess" class="alert alert-success d-none">
+              ✅ Thank you! Your message has been sent. We'll respond within 24 hours.
+            </div>
+            <div id="contactForm">
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Full Name *</label>
+                <input type="text" id="fullName" class="form-control" placeholder="e.g. Jane Wanjiku"/>
+                <div class="invalid-feedback" id="nameError">Please enter your full name.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Email Address *</label>
+                <input type="email" id="emailAddr" class="form-control" placeholder="e.g. jane@gmail.com"/>
+                <div class="invalid-feedback" id="emailError">Please enter a valid email address.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Subject *</label>
+                <select id="subject" class="form-select">
+                  <option value="">-- Select a subject --</option>
+                  <option>Course Enquiry</option>
+                  <option>Technical Support</option>
+                  <option>Partnership Opportunity</option>
+                  <option>General Question</option>
+                </select>
+                <div class="invalid-feedback" id="subjectError">Please select a subject.</div>
+              </div>
+              <div class="mb-4">
+                <label class="form-label fw-semibold">Message *</label>
+                <textarea id="message" class="form-control" rows="5" placeholder="Write your message here..."></textarea>
+                <div class="invalid-feedback" id="messageError">Message must be at least 20 characters.</div>
+              </div>
+              <button class="btn btn-primary w-100 fw-bold" onclick="validateForm()">Send Message</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="col-lg-4">
+          <h3 class="fw-bold mb-4">Get in Touch</h3>
+          <div class="mb-4">
+            <h6 class="fw-bold">📍 Address</h6>
+            <p class="text-muted">EduLearn HQ<br/>Westlands, Nairobi<br/>Kenya</p>
+          </div>
+          <div class="mb-4">
+            <h6 class="fw-bold">📧 Email</h6>
+            <p class="text-muted">hello@edulearn.co.ke<br/>support@edulearn.co.ke</p>
+          </div>
+          <div class="mb-4">
+            <h6 class="fw-bold">📞 Phone</h6>
+            <p class="text-muted">+254 700 123 456<br/>Mon–Fri, 8am–6pm EAT</p>
+          </div>
+          <div>
+            <h6 class="fw-bold">🌐 Follow Us</h6>
+            <a href="#" class="btn btn-outline-primary btn-sm me-1">Twitter</a>
+            <a href="#" class="btn btn-outline-primary btn-sm me-1">LinkedIn</a>
+            <a href="#" class="btn btn-outline-primary btn-sm">Instagram</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">&copy; 2026 EduLearn. All rights reserved. | <a href="contact.html" class="text-warning">Contact Us</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
