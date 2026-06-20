@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog – EduLearn</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">🎓 EduLearn</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header text-white text-center py-5">
+    <div class="container">
+      <h1 class="fw-bold">EduLearn Blog</h1>
+      <p class="lead">Tips, insights, and stories from our learning community.</p>
+    </div>
+  </section>
+
+  <!-- LIVE SEARCH (JavaScript Feature) -->
+  <section class="py-4 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <input type="text" id="blogSearch" class="form-control form-control-lg"
+            placeholder="🔍 Search articles..." oninput="searchBlog()"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div id="noResults" class="text-center text-muted d-none py-4">
+        <h5>No articles match your search.</h5>
+      </div>
+      <div class="row g-4" id="blogGrid">
+
+        <div class="col-md-6 col-lg-4 blog-item">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-img-top blog-thumb bg-primary text-white d-flex align-items-center justify-content-center" style="height:130px;font-size:2.5rem;">📚</div>
+            <div class="card-body">
+              <span class="badge bg-primary mb-2">Study Tips</span>
+              <h5 class="fw-bold blog-title">5 Proven Techniques to Study More Effectively</h5>
+              <p class="text-muted small blog-excerpt">Science-backed strategies including spaced repetition, active recall, and the Pomodoro technique to help you retain more in less time.</p>
+              <p class="text-muted small">✍️ Amina Mwangi &nbsp;|&nbsp; 📅 June 10, 2026</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="contact.html" class="btn btn-outline-primary btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 blog-item">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-img-top blog-thumb bg-success text-white d-flex align-items-center justify-content-center" style="height:130px;font-size:2.5rem;">💼</div>
+            <div class="card-body">
+              <span class="badge bg-success mb-2">Career</span>
+              <h5 class="fw-bold blog-title">How to Land Your First Tech Job in Kenya</h5>
+              <p class="text-muted small blog-excerpt">A practical roadmap for fresh graduates — from building a portfolio and applying to local startups to acing technical interviews.</p>
+              <p class="text-muted small">✍️ Brian Njoroge &nbsp;|&nbsp; 📅 June 5, 2026</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="contact.html" class="btn btn-outline-primary btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 blog-item">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-img-top blog-thumb bg-warning text-white d-flex align-items-center justify-content-center" style="height:130px;font-size:2.5rem;">🐍</div>
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">Technology</span>
+              <h5 class="fw-bold blog-title">Why Python Is the Best First Language to Learn in 2026</h5>
+              <p class="text-muted small blog-excerpt">Python's simplicity, huge community, and applications in AI, data science, and automation make it the top choice for beginners worldwide.</p>
+              <p class="text-muted small">✍️ Fatuma Odhiambo &nbsp;|&nbsp; 📅 May 28, 2026</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="contact.html" class="btn btn-outline-primary btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 blog-item">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-img-top blog-thumb bg-info text-white d-flex align-items-center justify-content-center" style="height:130px;font-size:2.5rem;">🌍</div>
+            <div class="card-body">
+              <span class="badge bg-info mb-2">EdTech</span>
+              <h5 class="fw-bold blog-title">The Rise of Online Learning Across Africa</h5>
+              <p class="text-muted small blog-excerpt">How mobile-first platforms are closing the education gap in Sub-Saharan Africa and what this means for the next generation of learners.</p>
+              <p class="text-muted small">✍️ David Kamau &nbsp;|&nbsp; 📅 May 20, 2026</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="contact.html" class="btn btn-outline-primary btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 blog-item">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-img-top blog-thumb bg-danger text-white d-flex align-items-center justify-content-center" style="height:130px;font-size:2.5rem;">🎨</div>
+            <div class="card-body">
+              <span class="badge bg-danger mb-2">Design</span>
+              <h5 class="fw-bold blog-title">UI/UX Trends Designers Need to Know in 2026</h5>
+              <p class="text-muted small blog-excerpt">From glassmorphism and AI-generated interfaces to accessible design systems — here's what's shaping product design this year.</p>
+              <p class="text-muted small">✍️ Fatuma Odhiambo &nbsp;|&nbsp; 📅 May 14, 2026</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="contact.html" class="btn btn-outline-primary btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 blog-item">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-img-top blog-thumb bg-secondary text-white d-flex align-items-center justify-content-center" style="height:130px;font-size:2.5rem;">🧠</div>
+            <div class="card-body">
+              <span class="badge bg-secondary mb-2">Productivity</span>
+              <h5 class="fw-bold blog-title">How to Stay Motivated While Learning Online</h5>
+              <p class="text-muted small blog-excerpt">Self-paced learning is powerful but hard. These strategies help you stay consistent, beat procrastination, and actually finish your courses.</p>
+              <p class="text-muted small">✍️ Amina Mwangi &nbsp;|&nbsp; 📅 May 6, 2026</p>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="contact.html" class="btn btn-outline-primary btn-sm">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">&copy; 2026 EduLearn. All rights reserved. | <a href="contact.html" class="text-warning">Contact Us</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
