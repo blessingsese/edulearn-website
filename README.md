@@ -3,7 +3,7 @@
 A fully responsive, multi-page educational web application built with HTML5, CSS3, JavaScript (ES6+), and Bootstrap 5.
 
 ## 🌐 Live Site
-[View on GitHub Pages][#  https://blessingsese.github.io/edulearn-website/]
+#  https://blessingsese.github.io/edulearn-website/
 
 ## 📄 Pages
 - **Home** – Hero section, features, and call to action
