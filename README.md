@@ -3,7 +3,7 @@
 A fully responsive, multi-page educational web application built with HTML5, CSS3, JavaScript (ES6+), and Bootstrap 5.
 
 ## 🌐 Live Site
-[View on GitHub Pages](#) 
+[View on GitHub Pages][#  https://blessingsese.github.io/edulearn-website/]
 
 ## 📄 Pages
 - **Home** – Hero section, features, and call to action
@@ -31,3 +31,6 @@ A fully responsive, multi-page educational web application built with HTML5, CSS
 - Start: 15 June 2026
 - Submission: 28 June 2026
 - Total commits: 34+
+
+
+[#]: #
