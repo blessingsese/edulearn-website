@@ -95,3 +95,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+// =============================================
+// FEATURE 4: Blog Live Search
+// =============================================
+function searchBlog() {
+  const query = document.getElementById('blogSearch').value.toLowerCase();
+  const items = document.querySelectorAll('.blog-item');
+  let visibleCount = 0;
+
+  items.forEach(item => {
+    const title = item.querySelector('.blog-title').textContent.toLowerCase();
+    const excerpt = item.querySelector('.blog-excerpt').textContent.toLowerCase();
+    if (title.includes(query) || excerpt.includes(query)) {
+      item.style.display = 'block';
+      visibleCount++;
+    } else {
+      item.style.display = 'none';
+    }
+  });
+
+  const noResults = document.getElementById('noResults');
+  if (noResults) {
+    noResults.classList.toggle('d-none', visibleCount > 0);
+  }
+}
