@@ -1,6 +1,6 @@
 /* EduLearn Global Styles */
 :root {
-  --primary: #0d6efd;
+  --primary: #047857;
   --accent: #ffc107;
   --dark: #212529;
 }
@@ -10,10 +10,14 @@ body {
 }
 
 .hero-section {
-  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  background: linear-gradient(135deg, #047857, #10b981); /* emerald-700 to emerald-500 */
   min-height: 60vh;
   display: flex;
   align-items: center;
+}
+/* Emerald Green Navbar */
+.navbar.bg-primary {
+  background-color: #047857 !important; /* emerald-700 */
 }
 
 .navbar-brand {
@@ -21,7 +25,7 @@ body {
 }
 /* Page Header */
 .page-header {
-  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  background: linear-gradient(135deg, #047857, #10b981);
   min-height: 25vh;
   display: flex;
   align-items: center;
@@ -32,7 +36,7 @@ body {
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  background-color: #0d6efd;
+  background-color: #047857;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
