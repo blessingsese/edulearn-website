@@ -149,3 +149,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+// =============================================
+// FEATURE 7: Auto-update footer year
+// =============================================
+document.addEventListener('DOMContentLoaded', () => {
+  const year = new Date().getFullYear();
+  document.querySelectorAll('footer p').forEach(p => {
+    p.innerHTML = p.innerHTML.replace('2026', year);
+  });
+});
