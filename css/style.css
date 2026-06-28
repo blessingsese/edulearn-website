@@ -96,3 +96,26 @@ html {
 a {
   transition: color 0.2s ease;
 }
+/* Mobile Responsiveness Fixes */
+@media (max-width: 576px) {
+  .hero-section, .page-header {
+    padding: 2.5rem 0 !important;
+    min-height: auto !important;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .display-5 {
+    font-size: 1.75rem;
+  }
+
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .accordion-button {
+    font-size: 0.95rem;
+  }
+}
