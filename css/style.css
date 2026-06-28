@@ -119,3 +119,12 @@ a {
     font-size: 0.95rem;
   }
 }
+/* Fade In Animation */
+body {
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
